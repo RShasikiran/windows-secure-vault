@@ -1,11 +1,11 @@
-*# Windows Secure Vault 🛡️*
+**# Windows Secure Vault 🛡️**
 
 A multi-layered file security system that integrates **Python** for cryptographic logic, **SQLite** for persistent metadata management, and **PowerShell** for secure Windows OS interaction.
 
-*## 🌟 Overview*
+**## 🌟 Overview**
 This project addresses the challenge of securing local files while ensuring recovery. Unlike simple scripts that store keys in plaintext, this tool manages unique AES-128 keys in a hidden SQL database and utilizes native Windows APIs for secure user authentication.
 
-*## 🛠️ Technical Architecture*
+**## 🛠️ Technical Architecture**
 
 
 * **Encryption Engine:** Implements the `cryptography.fernet` library (Symmetric AES-128 in CBC mode with HMAC authentication).
@@ -13,7 +13,7 @@ This project addresses the challenge of securing local files while ensuring reco
 * **Secure Input:** Invokes **PowerShell** subprocesses to use the `Read-Host -AsSecureString` API, preventing master passwords from appearing in terminal history or plaintext memory.
 * **Anti-Deletion Measures:** Leverages Windows file attributes (`attrib +h`) via subprocess calls to obfuscate the database from standard File Explorer views.
 
-*## 🚀 Getting Started*
+**## 🚀 Getting Started**
 
 **### Prerequisites**
 - Windows OS
