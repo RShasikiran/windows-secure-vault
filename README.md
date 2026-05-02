@@ -1,4 +1,4 @@
-**# Windows Secure Vault 🛡️**
+**# Windows Secure Vault 🛡️ **
 
 A multi-layered file security system that integrates **Python** for cryptographic logic, **SQLite** for persistent metadata management, and **PowerShell** for secure Windows OS interaction.
 
